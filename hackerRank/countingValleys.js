@@ -1,4 +1,4 @@
-//one of the best fun to do problems
+//one of the best fun-to-do problems
 
 function countingValleys(steps, path) {
     // Write your code here
