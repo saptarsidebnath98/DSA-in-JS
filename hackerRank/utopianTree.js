@@ -11,4 +11,4 @@ function utopianTree(n) {
   return height
 };
 
-console.log(utopianTree(4))
+// console.log(utopianTree(4))
