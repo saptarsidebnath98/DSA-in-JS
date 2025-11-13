@@ -65,7 +65,7 @@ const getMorseCode = (word) => {
   return result.slice()
 }
 
-console.log(getMorseCode("ABCD"))
+// console.log(getMorseCode("ABCD"))
  
 const getMorseWord = (code) => {
   let result = ""
@@ -76,5 +76,7 @@ const getMorseWord = (code) => {
   return result 
 }
 
-console.log(getMorseWord('.- -... -.-. -..'))
+
+
+// console.log(getMorseWord('.- -... -.-. -..'))
 
