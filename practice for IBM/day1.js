@@ -61,3 +61,24 @@ const isBalanced = (s) => {
 // console.log(isBalanced("({[]})"))
 // console.log(isBalanced("({[]}}]"))
 //-------------------------------------------------------------------------------------------------------------
+
+const isBalanced2 = (s) => {
+  const stack = [];
+  const map = new Map([
+    ['(', ')'],
+    ['{', '}'],
+    ['[', ']']
+  ]);
+  
+  for(let char of s){
+    if(map.has(char)){
+      stack.push(map.get(char))
+    }else{
+      if(stack.length === 0 || char !== stack.pop()) return false
+    }
+  }
+  return stack.length === 0;
+};
+
+// console.log(isBalanced2("[{()}]"))
+//-------------------------------------------------------------------------------------------------------------
