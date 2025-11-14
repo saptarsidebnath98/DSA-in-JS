@@ -28,3 +28,14 @@ const findTwoSumUsingMap = (arr, target) => {
 
 // findTwoSumUsingMap([2, 7, 11, 15], 9)
 //-------------------------------------------------------------------------------------------------------------
+const reverseWordsInSentence = (sentence) => {
+  const result = [];
+  const sentenceArr = sentence.split(" ");
+  for(let word of sentenceArr){
+    const reversedWord = word.split("").reverse().join("");
+    result.push(reversedWord)
+  }
+  return result.join(" ")
+}
+
+// reverseWordsInSentence("Hello World from IBM")
