@@ -54,6 +54,7 @@ const firstNonRepeatingChar = (s) => {
 };
 // firstNonRepeatingChar("aabb")
 //-------------------------------------------------------------------------------------------------------------
+// V.V.I as it is two pointer DSA question
 
 const lengthOfLongestSubString = (s) => {
   let left = 0;
